@@ -16,6 +16,9 @@ public class DrivableTrader extends Trader<Drivable>  {
     public DrivableTrader(List inventory, List wishlist, int money) {
         super(inventory, wishlist, money);
     }
+    public DrivableTrader(int money) {
+        super(money);
+    }
 
     public int getSellingPrice(Drivable ob){
         if (ob instanceof Tradable){
